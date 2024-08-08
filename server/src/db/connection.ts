@@ -7,7 +7,7 @@ async function connectDb(){
         await mongoose.connect(process.env.MONGODB_URL).then(
             
             () =>{
-                console.log("Connected by chan");
+                console.log("Connected to the database");
             }
         )
         console.log('after await');
