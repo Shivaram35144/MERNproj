@@ -3,18 +3,14 @@ import mongoose from 'mongoose';
 
 async function connectDb(){
     try {
-        console.log('before await');
         await mongoose.connect(process.env.MONGODB_URL).then(
             
             () =>{
                 console.log("Connected to the database");
             }
         )
-        console.log('after await');
-        // console.log('Connected to the database');
     } catch (error) {
         console.error('Error connecting to the database: ', error.message);
-        
     }
 
 }

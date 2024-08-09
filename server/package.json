@@ -13,6 +13,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "@google/generative-ai": "^0.16.0",
         "bcrypt": "^5.1.0",
         "concurrently": "^8.2.0",
         "cookie-parser": "^1.4.6",
@@ -23,6 +24,7 @@
         "jsonwebtoken": "^9.0.1",
         "mongodb": "^6.8.0",
         "mongoose": "^8.5.2",
+        "morgan": "^1.10.0",
         "openai": "^3.3.0"
     },
     "devDependencies": {
