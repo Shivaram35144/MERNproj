@@ -3,7 +3,7 @@ import { Request, Response, NextFunction } from "express";
 
 export const validate = (validations: ValidationChain[]) => {
     return async(req: Request, res: Response, next: NextFunction) => {
-        console.log("Validating request");
+        
         //print the body
         console.log(req.body);
         for(let validation of validations){
@@ -37,4 +37,9 @@ export const signupValidator = [
     body("name").notEmpty().withMessage("Name is required"),
     body("email").trim().isEmail().withMessage("Enter a valid email"),
     body("password").trim().isLength({ min: 6 }).withMessage("Password must be atleast 6 characters long")
+];
+
+
+export const chatValidator = [
+    body("message").notEmpty().withMessage("Message is required")
 ];

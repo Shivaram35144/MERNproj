@@ -6,7 +6,7 @@ const chatSchema = new mongoose.Schema({
         type: String,
         default: randomUUID(),
     },
-    role: {
+    role: { //user or bot
         type: String,
         required: true,
     },
@@ -34,7 +34,7 @@ const userSchema = new mongoose.Schema({
         min: 6,
         max: 1024
     },
-    // chats: [chatSchema],
+    chats: [chatSchema],
 });
 
 

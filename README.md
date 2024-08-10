@@ -2,7 +2,7 @@
 
 1. Backend - Node Express
 2. DB - Mongo
-3. Frontend - Vite
+3. Frontend - Vite + Context Api used for state mgmt
 4. Auth - bcrypt, jwt, Http-only cookies(so only server can make req), context-APi for auth
 5. Middleware
 6. Material UI in react
